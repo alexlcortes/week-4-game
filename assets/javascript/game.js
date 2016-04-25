@@ -5,4 +5,6 @@ $(document).ready(function() {
 		{name: "Deathstroke", hp: 120, ap:16, cp: 33, image: "<img src='assets/images/Dshot.jpg'>"},
 		{name: "Red Hood", hp: 90, ap: 15, cp: 30, image: "<img src='assets/images/Rhood.jpg'>"}
 	];
+
+	 $('button').on("click", function() {
 });
