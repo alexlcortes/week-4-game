@@ -2,31 +2,34 @@
 <html>
 	<head>
 		<meta charset= "UTF-8">
-		<title>Role Playing Game</title>
+		<title>Crystals</title>
 		<script   src="https://code.jquery.com/jquery-1.12.3.js"   integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc="   crossorigin="anonymous"></script>
 		<script type="text/javascript" src="assets/javascript/game.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
  		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
-
-	<body background="assets/images/background.jpg">
+	<body>
 		<div class="container">
-			<h1>Street Level Battle RPG</h1>
+			<h1>Crystals</h1>
 				<div id="display"></div>
-				<div id="buttons"></div>
-				<button id="clear">clear</button>
-				
-					<div class="row">
-						<div class="col-md-3"><img src="assets/images/GW.jpg" class="characters" width="135px" height="170px"></div>
-						<div class="col-md-3"><img src="assets/images/Dshot.jpg" class="characters" width="135px" height="170px"></div>
-						<div class="col-md-3"><img src="assets/images/Dstroke.jpg" class="characters" width="135px" height="170px"></div>
-						<div class="col-md-3"><img src="assets/images/Rhood.jpg" class="charaters" width="135px" height="170px"></div>
+					<div id="instructions">
+						<p>The game will choose a random number.</p>
+						<p>You will have four buttons.</p>
+						<p>You must guess the value of each buttn and add them together to equal the random number</p>
+						<p>If your guess pass the random number value, you lose.</p>
+							<div id="random-number">
+								<div id="buttons">
+									<button id="button1">button1</button>
+									<button id="button2">button2</button>
+									<button id="button3">button3</button>
+									<button id="button4">button4</button>
+								</div>
+									<div id="gamer-number"></div>
+							</div>
 					</div>
-
-				<button id="attack">Attack</button>
-					
-
+				</div>
+	
 		</div>
 	</body>
 </html>
