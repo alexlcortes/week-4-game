@@ -1,15 +1,13 @@
 $(document).ready(function() {
 	var wins =0;
 	var loses = 0;
-	var randomNumber = 0;
 	var gamerNumber = 0;
 	var crytalOne = 0;
 	var crystalTwo = 0;
 	var crystalThree = 0;
 	var crystalFour = 0;
 
-	$('#start').on('click', function() {
-		randomNumber = Math.floor((Math.random() * 100) + 1);
+		var randomNumber = Math.floor((Math.random() * 100) + 1);
 		console.log(randomNumber);
 		$('#random-number').html(randomNumber);
 
@@ -27,27 +25,32 @@ $(document).ready(function() {
 
 		$('#button1').on('click', function() {
 			gamerNumber = crystalOne + gamerNumber;
-			console.log(gamerNumber);
+			$('#gamer-number').html(gamerNumber);
 		});
 
 		$('#button2').on('click', function() {
 			gamerNumber = crystalTwo + gamerNumber;
-			console.log(gamerNumber);
+			$('#gamer-number').html(gamerNumber);
 		});
 
 		$('#button3').on('click', function() {
 			gamerNumber = crystalThree + gamerNumber;
-			console.log(gamerNumber);
+			$('#gamer-number').html(gamerNumber);
 		});
 
 		$('#button4').on('click', function() {
 			gamerNumber = crystalFour + gamerNumber;
-			console.log(gamerNumber);
+			$('#gamer-number').html(gamerNumber);
+
 		});
+
+
 
 	});
 
-});
+// $('#reset').on('click', function() {
+// 	ready();
+// });
 
 
 
