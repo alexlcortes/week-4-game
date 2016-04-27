@@ -1,8 +1,9 @@
 h1 {
-	font-size: 25px;
-	color:#FF0000;
+	font-size: 50px;
+	color: #d6e9c6;
 }
 
-body {
-	background-image: url("background.jpg");
+.panel-title {
+	color: #483D8D;
 }
+
