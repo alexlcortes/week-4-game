@@ -9,24 +9,69 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
  		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	</head>
-	<body>
+<body>
 		<div class="container">
 			<h1>Crystals</h1>
+			<br>
 				<div id="display"></div>
-					<div id="instructions">
-						<p>The game chooses a <strong>Master Number</strong></p>
-						<br>
-						<p>You will have four buttons each with a different value</p>
-						<br>
-						<p>By pressing on the buttons your <strong>Gamer Number</strong> will increase</p>
-						<br>
-						<p>If your Gamer Number is equal to the Master Number then you win</p>
-						<br>
-						<p>If your Gamer Number is higher than the Master Number then you lose</p>
-						<br>
-						<div><h3>Wins: </h3><span id="wins"></span></div>
-						<div><h3>Loses: </h3><span id="loses"></span></div>
-						<div><h3>Master Number: </h3><span id="random-number"></span></div>
+					<div class="row">
+						<div id="instructions">
+							<div class="col-lg-6 col-md-6 col-sm-6">
+								<div class="panel panel-success">
+									<div class="panel-heading">
+										<h3 class="panel-title">Instructions</h3>
+									</div>
+									<div class="panel-body">
+										<p>The game chooses a Master Number</p>
+										<p>You have four crystals each with different values every time you play</p>
+										<p>By pressing on the crystals your Gamer Number will increase</p>
+										<p>If your Gamer Number equals to the Master Number then you win</p>
+										<p>If your Gamer Number is higher than the Master Number then you lose</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="scores">
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<div class="panel panel-success">
+									<div class="panel-heading">
+										<h3 class="panel-title">Wins:</h3>
+									</div>
+									<div class="panel-body">
+										<div><span id="wins"></span></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<div class="panel panel-success">
+									<div class="panel-heading">
+										<h3 class="panel-title">Loses:</h3>
+									</div>
+									<div class="panel-body">
+										<div><span id="loses"></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="mastNumb">
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<div class="panel panel-success">
+									<div class="panel-heading">
+										<h3 class="panel-title">Master Number:</h3>
+									</div>
+									<div class"panel-body">
+										<div><span id="random-number"></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
 				<div class="row">
 					<div class="button1">
@@ -36,7 +81,7 @@
 									<h3 class="panel-title">Orange Crystal</h3>
 								</div>
 								<div class="panel-body">
-										<img src="assets/images/orangeball.jpg" width=80 height=80> 
+										<img src="assets/images/orangeball.jpg" width=60 height=70> 
 								</div>
 							</div>
 						</div>
@@ -49,7 +94,7 @@
 									<h3 class="panel-title">Green Crystal</h3>
 								</div>
 								<div class="panel-body">
-									<img src="assets/images/greenball.jpg" width=80 height=80> 
+									<img src="assets/images/greenball.jpg" width=60 height=70> 
 								</div>
 							</div>
 						</div>
@@ -62,7 +107,7 @@
 									<h3 class="panel-title">Red Crystal</h3>
 								</div>
 								<div class="panel-body">
-									<img src="assets/images/redball.jpg" width=80 height=80> 
+									<img src="assets/images/redball.jpg" width=60 height=70> 
 								</div>
 							</div>
 						</div>
@@ -75,19 +120,26 @@
 									<h3 class="panel-title">Black Crystal</h3>
 								</div>
 								<div class="panel-body">
-									<img src="assets/images/blackball.jpg" width=80 height=80> 
+									<img src="assets/images/blackball.jpg" width=60 height=70> 
 								</div>
 							</div>
 						</div>
 					</div>
 		</div>
 
-			
-							<div><h3>Gamer Number: </h3><span id="gamer-number"></span></div> 
-
+					<div class="row">
+						<div class="gameNumb">
+							<div class="col-lg-3 col-md-3 col-sm-3">
+								<div class="panel panel-success">
+									<div class="panel-heading">
+										<h3 class="panel-title">Gamer Number</h3>
+									</div>
+									<div class"panel-body">
+										<div><span id="gamer-number"></span></div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
-	
-		</div>
-	</body>
+</body>
 </html>
