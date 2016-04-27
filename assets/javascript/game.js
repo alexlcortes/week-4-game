@@ -23,22 +23,22 @@ $(document).ready(function() {
 		crystalFour = Math.floor((Math.random() * 20) + 1);
 		console.log(crystalFour);
 
-		$('#button1').on('click', function() {
+		$('.button1').on('click', function() {
 			gamerNumber = crystalOne + gamerNumber;
 			$('#gamer-number').html(gamerNumber);
 		});
 
-		$('#button2').on('click', function() {
+		$('.button2').on('click', function() {
 			gamerNumber = crystalTwo + gamerNumber;
 			$('#gamer-number').html(gamerNumber);
 		});
 
-		$('#button3').on('click', function() {
+		$('.button3').on('click', function() {
 			gamerNumber = crystalThree + gamerNumber;
 			$('#gamer-number').html(gamerNumber);
 		});
 
-		$('#button4').on('click', function() {
+		$('.button4').on('click', function() {
 			gamerNumber = crystalFour + gamerNumber;
 			$('#gamer-number').html(gamerNumber);
 
